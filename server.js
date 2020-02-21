@@ -10,7 +10,7 @@ const summary = {
 }
 
 function render(thisDay){
-  `<!DOCTYPE html>
+  const page = `<!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -22,6 +22,7 @@ function render(thisDay){
   </body>
   </html>
   `
+  return page
 }
 
 const port = process.env.PORT || 3000
