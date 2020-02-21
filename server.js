@@ -18,14 +18,14 @@ function render(thisDay){
     <title>Today is ${thisDay}</title>
   </head>
   <body>
-    
+    <h1>Today is ${thisDay}, woop woop!</h1>
   </body>
   </html>
   `
 }
 
 const port = process.env.PORT || 3000
-const running = 'Server running on 3000'
+const running = 'Server running'
 app.listen(port, ()=>console.log(running))
 
 app.get('/summary/:day', (req, res)=>{
