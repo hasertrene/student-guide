@@ -11,3 +11,5 @@ async function logSummary(url){
     console.log(error.message)
   }
 }
+
+logSummary(url)

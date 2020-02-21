@@ -36,6 +36,7 @@ app.get('/summary/:day', (req, res)=>{
 })
 
 app.get('/:day', (req, res)=>{
+  console.log('All good')
   const day = req.params.day
   res.send(render(day))
 })
