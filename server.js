@@ -1,28 +1,15 @@
 const express = require('express')
+const render = require('./render')
 const app = express()
+
+app.use(express.static("public"));
 
 const summary = {
   monday: "started the week",
-  tuesday: "picking up the pace",
+  tuesday: "picking up pace",
   wednesday: "understanding callbacks",
   thursday: "creating apps",
   friday: "summarize"
-}
-
-function render(thisDay){
-  const page = `<!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today is ${thisDay}</title>
-  </head>
-  <body>
-    <h1>Today is ${thisDay}, woop woop!</h1>
-  </body>
-  </html>
-  `
-  return page
 }
 
 const port = process.env.PORT || 3000
