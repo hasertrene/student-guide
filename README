@@ -1,5 +1,5 @@
 THANK YOU FOR NOT SMOKING or WELCOME TO THE STUDENT-GUIDE APP
 This app runs a server with Node.js/Express, file: 'server.js'. It does this on Heroku, with URL: 'https://student-guide.herokuapp.com/'
-This app also runs a client with Axios, file: 'client.js'. If you run client.js with Node.js in your terminal, you can add a weekday as a parameter and it will log whatever happened on that weekday, in the first week of the Academy.
+This app also runs a client with Axios, file: 'client.js'. If you run client.js with Node.js in your terminal, you can add a weekday as a parameter and it will log whatever happened on that weekday, in the first week of the Academy. This happens on URL: 'https://student-guide.herokuapp.com/summary/'
 If you browse to the Heroku repository and add a weekday to the root ('/'), a website will load with your input as a parameter.
 THE END
